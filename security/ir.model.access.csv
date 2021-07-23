@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gc_request_gigaclub,access_gc_request_gigaclub,model_gc_request,gigaclub_base.group_gigaclub,1,1,1,1

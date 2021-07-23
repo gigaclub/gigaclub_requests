@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="gc_request_menu_root" parent="gigaclub_base.gc_menu_root" name="Request" action="gigaclub_requests.gc_request_action" />
+
+    </data>
+</odoo>
