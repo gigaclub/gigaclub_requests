@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="gc_request_tree_view">
+            <field name="name">gc.request.tree.view</field>
+            <field name="model">gc.request</field>
+            <field name="arch" type="xml">
+                <tree string="Requests">
+                    <field name="sender_id" />
+                    <field name="receiver_id" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="gc_request_form_view">
+            <field name="name">gc.request.form.view</field>
+            <field name="model">gc.request</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="sender_id" />
+                        <field name="receiver_id" />
+                        <field name="state" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="gc_request_action">
+            <field name="name">Request</field>
+            <field name="res_model">gc.request</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
